@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">DinosaurAI</string>
+    <string name="btn_texto_video">Texto a Video</string>
+    <string name="btn_imagen_video">Imagen a Video</string>
+    <string name="btn_texto_imagen">Texto a Imagen</string>
+</resources>
