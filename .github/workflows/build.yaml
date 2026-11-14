@@ -3,8 +3,6 @@ name: Build DinosaurAI APK
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
   workflow_dispatch:
 
 jobs:
@@ -21,15 +19,15 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      - name: Dar permisos al gradlew
-        run: chmod +x ./gradlew
+      # ESTO ES LA MAGIA: Instala Gradle solo sin necesidad de gradlew
+      - name: Configurar Gradle
+        uses: gradle/actions/setup-gradle@v3
 
       - name: Compilar APK (debug)
-        run: ./gradlew assembleDebug --no-daemon
+        run: gradle assembleDebug --no-daemon
 
       - name: Subir APK como artefacto
         uses: actions/upload-artifact@v4
         with:
           name: DinosaurAI-debug
           path: app/build/outputs/apk/debug/app-debug.apk
-          retention-days: 30
