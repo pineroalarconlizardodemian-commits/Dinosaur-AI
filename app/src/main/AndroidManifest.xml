@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- Permiso para conectarse a las APIs de IA -->
+    <!-- Permiso para internet -->
     <uses-permission android:name="android.permission.INTERNET" />
-
-    <!-- Requisito de tu proyecto: Android 12+ -->
-    <uses-sdk
-        android:minSdkVersion="31"
-        android:targetSdkVersion="35" />
+    
+    <!-- Permiso para leer archivos (necesario para la galería en algunas versiones) -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
 
     <application
         android:allowBackup="true"
@@ -15,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:label="@string/app_name"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true" 
         android:theme="@style/Theme.DinosaurAI">
+        <!-- ⚠️ Agregamos android:usesCleartextTraffic="true" para que el reproductor de video no falle -->
 
         <activity
             android:name=".MainActivity"
