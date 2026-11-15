@@ -5,12 +5,12 @@ plugins {
 }
 
 android {
-    namespace = "io.github.tunusuario.dinosauria"
+    namespace = "io.github.tunusuario.dinosauria" // <-- AQUÍ PON TU USUARIO REAL
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "io.github.tunusuario.dinosauria"
-        minSdk = 31          // Android 12+
+        applicationId = "io.github.tunusuario.dinosauria" // <-- AQUÍ TAMBIÉN
+        minSdk = 31
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -47,12 +47,12 @@ dependencies {
     implementation("androidx.compose.material3:material3")
     implementation("androidx.activity:activity-compose:1.9.2")
     implementation("androidx.navigation:navigation-compose:2.8.1")
+    
+    // --- LIBRERÍAS PARA LA IA ---
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.6")
-
-    // Red (para cuando conectes la API)
-    implementation("com.squareup.retrofit2:retrofit:2.11.0")
-    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
-    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    implementation("io.github.enyason:replicate-kotlin:0.1.0")
+    implementation("io.coil-kt:coil-compose:2.7.0")
+    // ----------------------------
 
     debugImplementation("androidx.compose.ui:ui-tooling")
 }
