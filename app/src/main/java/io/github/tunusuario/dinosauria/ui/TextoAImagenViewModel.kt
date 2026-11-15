@@ -21,7 +21,7 @@ class TextoAImagenViewModel : ViewModel() {
     // ==========================================================
     // ⚠️ PEGA AQUÍ TU TOKEN DE HUGGING FACE (hf_...)
     // ==========================================================
-    private val apiToken = "TU_TOKEN_DE_HUGGING_FACE_AQUI"
+    private val apiToken = "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"
 
     // URL del modelo (Stable Diffusion XL)
     private val apiUrl = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0"
