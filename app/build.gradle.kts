@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "io.github.tunusuario.dinosauria" // <-- AQUÍ PON TU USUARIO REAL
+    namespace = "io.github.tunusuario.dinosauria" // <-- CAMBIA ESTO
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "io.github.tunusuario.dinosauria" // <-- AQUÍ TAMBIÉN
+        applicationId = "io.github.tunusuario.dinosauria" // <-- CAMBIA ESTO
         minSdk = 31
         targetSdk = 35
         versionCode = 1
@@ -48,11 +48,11 @@ dependencies {
     implementation("androidx.activity:activity-compose:1.9.2")
     implementation("androidx.navigation:navigation-compose:2.8.1")
     
-    // --- LIBRERÍAS PARA LA IA ---
+    // --- LIBRERÍAS PARA LA IA (HUGGING FACE) ---
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.6")
-    implementation("io.github.enyason:replicate-kotlin:0.1.0")
-    implementation("io.coil-kt:coil-compose:2.7.0")
-    // ----------------------------
+    implementation("com.squareup.okhttp3:okhttp:4.12.0") // <-- ESTA ES LA QUE FALTA
+    implementation("io.coil-kt:coil-compose:2.7.0")     // <-- Para mostrar la imagen
+    // -------------------------------------------
 
     debugImplementation("androidx.compose.ui:ui-tooling")
 }
