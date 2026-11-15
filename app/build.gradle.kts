@@ -50,8 +50,8 @@ dependencies {
     
     // --- LIBRERÍAS PARA LA IA (HUGGING FACE) ---
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.6")
-    implementation("com.squareup.okhttp3:okhttp:4.12.0") // <-- ESTA ES LA QUE FALTA
-    implementation("io.coil-kt:coil-compose:2.7.0")     // <-- Para mostrar la imagen
+    implementation("com.squareup.okhttp3:okhttp:4.12.0") 
+    implementation("io.coil-kt:coil-compose:2.7.0")
     // -------------------------------------------
 
     debugImplementation("androidx.compose.ui:ui-tooling")
