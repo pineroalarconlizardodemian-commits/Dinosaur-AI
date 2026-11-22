@@ -20,7 +20,7 @@ class ImagenAVideoViewModel : ViewModel() {
     val estado: StateFlow<EstadoVideo> = _estado
 
     // Sustituye este marcador por tu token de Hugging Face (no publiques tokens reales).
-    private val apiToken = "REEMPLAZA_CON_TU_TOKEN_HF"
+    private val apiToken = "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"
     private val apiUrl = "https://api-inference.huggingface.co/models/stabilityai/stable-video-diffusion-img2vid-xt"
 
     private val client = OkHttpClient.Builder()
