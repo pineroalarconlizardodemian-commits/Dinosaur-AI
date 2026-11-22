@@ -21,7 +21,7 @@ class TextoAImagenViewModel : ViewModel() {
     val estado: StateFlow<EstadoGeneracion> = _estado
 
     // Sustituye este marcador por tu token de Hugging Face (no publiques tokens reales).
-    private val apiToken = "REEMPLAZA_CON_TU_TOKEN_HF"
+    private val apiToken = "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"
     private val apiUrl = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0"
 
     private val client = OkHttpClient.Builder()
